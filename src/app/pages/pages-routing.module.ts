@@ -10,6 +10,10 @@ const routes: Routes = [
   {
     path: 'main',
     loadChildren: () => import('./main/main.module').then(m => m.MainPageModule)
+  },
+  {
+    path: 'redirects-list',
+    loadChildren: () => import('./redirects-list/redirects-list.module').then( m => m.RedirectsListPageModule)
   }
 ];
 
