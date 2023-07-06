@@ -1,16 +1,17 @@
 <ion-header [translucent]="true">
-  <ion-toolbar color="primary">
-
+  <ion-toolbar class="toolbar" color="primary">
     <ion-buttons slot="start">
-      <ion-button fill="clear">
+      <ion-button (click)="goBack()" *ngIf="showBack" fill="clear">
         <ion-icon name="arrow-back-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-title class="title">{{title}}</ion-title>
-    <ion-buttons slot="end" class="ion-no-padding ion-no-margin">
+    <ion-title>
+      {{ title }}
+    </ion-title>
+    <!-- <ion-buttons slot="end" class="ion-no-padding ion-no-margin">
       <ion-button class="logo" fill="clear">
         <ion-img src="../../../assets/imgs/NED-Logo-white.png"></ion-img>
       </ion-button>
-    </ion-buttons>
+    </ion-buttons> -->
   </ion-toolbar>
 </ion-header>

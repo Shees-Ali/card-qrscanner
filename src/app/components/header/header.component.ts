@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'header',
@@ -6,9 +7,13 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  @Input('title') title: string = "QR Scanner";
-  constructor() { }
+  @Input('title') title: string = 'QR Scanner';
+  @Input('showBack') showBack: boolean = true;
+  constructor(public location: Location) {}
 
-  ngOnInit() { }
+  ngOnInit() {}
 
+  goBack() {
+    this.location.back();
+  }
 }

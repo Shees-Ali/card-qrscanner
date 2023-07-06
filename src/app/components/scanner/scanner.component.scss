@@ -1,0 +1,30 @@
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.qr-halo {
+  width: 150px;
+  height: 150px;
+  border: 5px solid #1f827f;
+  border-radius: 24px;
+}
+
+.h-100 {
+  height: 100%;
+
+  ion-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ion-button {
+      height: 80px;
+      width: 160px;
+      --border-radius: 12px;
+    }
+  }
+}

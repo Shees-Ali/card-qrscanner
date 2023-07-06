@@ -1,5 +1,5 @@
-<header></header>
+<header [showBack]="false"></header>
 
-<ion-content [fullscreen]="true">
-    <app-scanner (emitData)="redirect($event)"></app-scanner>
+<ion-content>
+  <app-scanner (emitData)="redirect($event)"></app-scanner>
 </ion-content>

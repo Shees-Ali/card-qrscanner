@@ -2,7 +2,7 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'io.ionic.starter',
-  appName: 'card-qrscanner',
+  appName: 'Card QR Scanner',
   webDir: 'www',
   server: {
     androidScheme: 'https'
