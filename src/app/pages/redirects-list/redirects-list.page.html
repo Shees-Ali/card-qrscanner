@@ -1,6 +1,16 @@
 <header [title]="'Redirects List'"></header>
 
 <ion-content>
+  <div *ngIf="sims.length > 0" class="sims">
+    <div *ngFor="let sim of sims" class="sim-div">
+      <p>
+        Carrier : {{sim.carrierName}} <br />
+        Number : {{sim.number}} <br />
+        Country Code : {{sim.mobileCountryCode}}
+      </p>
+    </div>
+  </div>
+
   <ion-list>
     <ion-item (click)="redirectToRegistrar()" class="ion-activatable">
       <ion-ripple-effect></ion-ripple-effect>
